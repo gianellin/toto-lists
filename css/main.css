@@ -5,11 +5,31 @@
     box-sizing: border-box;
 }
 
+.clock-container {
+    width: 100%;
+    max-width: 540px;
+    background: rgb(174, 174, 174);
+    margin: 100px auto 20px;
+    padding: 40px 30px 40px ;
+    border-radius: 50px;
+    box-shadow: 12px 15px 20px 2px rgba(47, 47, 47, 0.2);
+}
+
+
+#clock{
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
     background: rgb(235, 209, 187);
     padding: 10px;
+    
 }
 
 .list {
@@ -19,6 +39,7 @@
     margin: 100px auto 20px;
     padding: 40px 30px 70px ;
     border-radius: 10px;
+    box-shadow: 12px 15px 20px 2px rgba(47, 47, 47, 0.2);
 }
 
 .list h1 {
@@ -69,4 +90,47 @@ ul li{
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
+    user-select:none;
+    cursor: pointer;
+    position: relative;
+}
+/* this pseudo element is to place the circle image in the task list */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* this pseudo element after the new class "checked" is to place the checked image */
+ul li.checked::before {
+    background-image: url(/images/checked.png) ;
+
+}
+
+ul li span {
+    position:absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
 }

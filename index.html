@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toto - list manager</title>
+    <title>Toto</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="container">
+        <div class="Profile">
+            <div class="clock-container">
+                <div id="clock">
+                    
+                </div>
+            </div>
+        </div>
         <div class="list">
             <h1> Todo List <img src="images/tasker.png"></h1>
             <div class="field">
                 <input type="text" id="input-box" placeholder="Add a task">
-                <button type="submit">Add</button>
+                <button onclick="addTask()">Add</button>
             </div>
             <ul id="task-list">
-                <li>Task 1</li>
+                <!-- <li class="checked">Task 1</li>
                 <li>Task 2</li>
-                <li>Task 3</li>
+                <li>Task 3</li> -->
             </ul>
         </div>
             
     </div>
-        
+
+    <script src="/js/main.js"></script>    
 </body>
 </html>
