@@ -29,14 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](/images/Screenshot%202023-04-20%20at%204.45.50%20PM.png)
+![Screenshot](/images/Screenshot%202023-04-20%20at%205.02.51%20PM.png)
 
 <br>
 
 ### Links
 
 
-- Live Site URL: [Demo](https://delightful-nasturtium-8646bd.netlify.app/)
+- Live Site URL: [Demo](/images/Screenshot%202023-04-20%20at%205.02.51%20PM.png)
 
 ## My process
 
