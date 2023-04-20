@@ -134,3 +134,13 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 }
+
+.attribution { 
+    padding-top: 2rem;
+    font-size: 12px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: rgb(125, 141, 133); 
+    text-decoration: none;
+}
